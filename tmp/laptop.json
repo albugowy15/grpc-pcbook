@@ -1,0 +1,62 @@
+{
+ "id": "7a7d58f3-2dfc-4d5a-93e6-6a2250dae2b8",
+ "brand": "Dell",
+ "name": "XPS 15",
+ "cpu": {
+  "brand": "AMD",
+  "name": "Ryzen 5 3600",
+  "number_cores": 4,
+  "number_threads": 5,
+  "min_ghz": 2.877270349614517,
+  "max_ghz": 4.7064161754268365
+ },
+ "memory": {
+  "value": "25",
+  "unit": "GIGABYTE"
+ },
+ "gpus": [
+  {
+   "brand": "AMD",
+   "name": "RX 5600",
+   "min_ghz": 1.2554980773833067,
+   "max_ghz": 1.5556542041582317,
+   "memory": {
+    "value": "4",
+    "unit": "GIGABYTE"
+   }
+  }
+ ],
+ "storages": [
+  {
+   "driver": "SSD",
+   "memory": {
+    "value": "529",
+    "unit": "GIGABYTE"
+   }
+  },
+  {
+   "driver": "HDD",
+   "memory": {
+    "value": "4",
+    "unit": "GIGABYTE"
+   }
+  }
+ ],
+ "screen": {
+  "size_inch": 14.3447895,
+  "resolution": {
+   "width": 2168,
+   "height": 1220
+  },
+  "panel": "OLED",
+  "multitouch": false
+ },
+ "keyboard": {
+  "layout": "QWERTY",
+  "backlit": true
+ },
+ "weight_kg": 2.9521022738078235,
+ "price_usd": 2573.6176937513587,
+ "release_year": 2018,
+ "updated_at": "2023-02-09T03:47:50.299591269Z"
+}
