@@ -1,8 +1,10 @@
 package service
 
 import (
+	"context"
 	"errors"
 	"fmt"
+	"log"
 	"sync"
 
 	"github.com/albugowy15/pcbook/pb"
@@ -19,7 +21,7 @@ type LaptopStore interface {
 	// Find finds a laptop by ID
 	Find (id string) (*pb.Laptop, error)
 	// Search searches for laptops with filter, returns one by one via the found function
-	Search(filter *pb.Filter, found func(laptop *pb.Laptop) error) error
+	Search(ctx context.Context, filter *pb.Filter, found func(laptop *pb.Laptop) error) error
 }
 
 // InMemoryLaptopStore stores laptop in memory
@@ -70,6 +72,7 @@ func (store *InMemoryLaptopStore) Find(id string) (*pb.Laptop, error) {
 
 // Search searches for laptops with filter, returns one by one via the found function
 func (store *InMemoryLaptopStore) Search(
+	ctx context.Context,
 	filter *pb.Filter,
 	found func(laptop *pb.Laptop) error,
 ) error {
@@ -77,6 +80,11 @@ func (store *InMemoryLaptopStore) Search(
 	defer store.mutex.RUnlock();
 
 	for _, laptop := range store.data {
+		if ctx.Err() == context.Canceled || ctx.Err() == context.DeadlineExceeded {
+			log.Print("context is cancelled")
+			return errors.New("context is cancelled")
+		}
+		
 		if isQualified(filter, laptop) {
 			// deep copy
 			other, err := deepCopy(laptop)
