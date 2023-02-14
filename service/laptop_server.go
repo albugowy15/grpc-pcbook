@@ -142,7 +142,7 @@ func (server *LaptopServer) UploadImage(stream pb.LaptopService_UploadImageServe
 			break
 		}
 		if err != nil {
-			return logError(status.Errorf(codes.Unknown, "cannot receive chunk data: %w", err))
+			return logError(status.Errorf(codes.Unknown, "cannot receive chunk data: %v", err))
 		}
 
 		chunk := req.GetChunkData()
