@@ -1,27 +1,27 @@
 {
- "id": "7a7d58f3-2dfc-4d5a-93e6-6a2250dae2b8",
+ "id": "da8d3745-b789-41b0-b92e-85a27adeac2f",
  "brand": "Dell",
  "name": "XPS 15",
  "cpu": {
-  "brand": "AMD",
-  "name": "Ryzen 5 3600",
+  "brand": "Intel",
+  "name": "Core 19-1245P",
   "number_cores": 4,
-  "number_threads": 5,
-  "min_ghz": 2.877270349614517,
-  "max_ghz": 4.7064161754268365
+  "number_threads": 10,
+  "min_ghz": 3.197006281486483,
+  "max_ghz": 3.953534505435962
  },
  "memory": {
-  "value": "25",
+  "value": "56",
   "unit": "GIGABYTE"
  },
  "gpus": [
   {
-   "brand": "AMD",
-   "name": "RX 5600",
-   "min_ghz": 1.2554980773833067,
-   "max_ghz": 1.5556542041582317,
+   "brand": "Nvidia",
+   "name": "RTX 3060",
+   "min_ghz": 1.496150870565364,
+   "max_ghz": 1.8708111359381994,
    "memory": {
-    "value": "4",
+    "value": "5",
     "unit": "GIGABYTE"
    }
   }
@@ -30,33 +30,33 @@
   {
    "driver": "SSD",
    "memory": {
-    "value": "529",
+    "value": "631",
     "unit": "GIGABYTE"
    }
   },
   {
    "driver": "HDD",
    "memory": {
-    "value": "4",
+    "value": "1",
     "unit": "GIGABYTE"
    }
   }
  ],
  "screen": {
-  "size_inch": 14.3447895,
+  "size_inch": 13.6128,
   "resolution": {
-   "width": 2168,
-   "height": 1220
+   "width": 4723,
+   "height": 2657
   },
-  "panel": "OLED",
+  "panel": "IPS",
   "multitouch": false
  },
  "keyboard": {
-  "layout": "QWERTY",
+  "layout": "QWERTZ",
   "backlit": true
  },
- "weight_kg": 2.9521022738078235,
- "price_usd": 2573.6176937513587,
- "release_year": 2018,
- "updated_at": "2023-02-09T03:47:50.299591269Z"
+ "weight_kg": 2.636682314335499,
+ "price_usd": 2263.5502107514576,
+ "release_year": 2015,
+ "updated_at": "2023-02-14T16:22:39.332509033Z"
 }
